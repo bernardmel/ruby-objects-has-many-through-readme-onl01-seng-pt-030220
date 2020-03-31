@@ -29,8 +29,8 @@ end
     best_tip = 0
     great_tipper = nil
     meals.each do |meal|
-      if customer.tip > best_tip
-        best_tip = customer.tip
+      if meal.tip > best_tip
+        best_tip = meal.tip
         great_tipper = meal.customer
       end
     end
