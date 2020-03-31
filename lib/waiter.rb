@@ -28,10 +28,10 @@ end
   def best_tipper
     best_tip = 0
     great_tipper = nil
-    meals.each do |customer|
+    meals.each do |meal|
       if customer.tip > best_tip
         best_tip = customer.tip
-        great_tipper = customer.customer
+        great_tipper = meal.customer
       end
     end
     great_tipper
